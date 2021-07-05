@@ -1,6 +1,13 @@
 import streamlit as st
 option = st.selectbox('How would you like to be contacted?',('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', option)
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 # numm=st.slider('Number',1,20,value=5)
 
 # st.write(numm)
